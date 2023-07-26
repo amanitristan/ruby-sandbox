@@ -17,7 +17,9 @@ pp some_random_input
 pp input_class
 
 # if string, downcase and print
-
+if input_class = String
+  pp some_random_input.downcase
+end
 
 # if time, print downcased day of week
 
