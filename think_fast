@@ -17,43 +17,43 @@ pp some_random_input
 pp input_class
 
 # if string, downcase and print
-if input_class == String
-  pp some_random_input.downcase
-end
+#if input_class == String
+  #pp some_random_input.downcase
+#end
 
 # if time, print downcased day of week
-if input_class == Time
-  pp Time.now.strftime("%A").downcase
-end
+#if input_class == Time
+  #pp Time.now.strftime("%A").downcase
+#end
 
 # if integer, print "X is odd" or "X is even"
-if input_class == Integer && some_random_input.even?
-  pp "#{some_random_input} is even."
-else 
-  pp "#{some_random_input} is odd."
-end
+#if input_class == Integer && some_random_input.even?
+  #pp "#{some_random_input} is even."
+#else 
+  #pp "#{some_random_input} is odd."
+#end
 
 # if symbol, downcase and print
-if input_class == Symbol
-  pp some_random_input.downcase
-end
+#if input_class == Symbol
+  #pp some_random_input.downcase
+#end
 
 # if nil , print "no object provided"
-if some_random_input == nil
+#if some_random_input == nil
   pp "no object provided"
-end
+#end
 
 # if true, print "you may pass", otherwise print "you may not pass"
-if input_class == True && some_random_input == true
-  pp "you may pass"
-else
-  pp "you may not pass"
-end
+#if input_class == true && some_random_input == true
+  #pp "you may pass"
+#else
+  #pp "you may not pass"
+#end
 
 # if hash, print list of keys as an Array
-if input_class == Hash
+#if input_class == Hash
   pp some_random_input.keys
-end
+#end
 
 #
 # pull the if statement together
@@ -70,9 +70,9 @@ elsif input_class == Symbol
   pp some_random_input.downcase
 elsif some_random_input == nil
   pp "no object provided"
-elsif input_class == True && some_random_input == true
+elsif input_class == true && some_random_input == true
   pp "you may pass"
-elsif input_class == False && some_random_input == false
+elsif input_class == false && some_random_input == false
   pp "you may not pass"
 elsif input_class == Hash
   pp some_random_input.keys
