@@ -44,7 +44,7 @@ if some_random_input == nil
 end
 
 # if true, print "you may pass", otherwise print "you may not pass"
-if input_class == true && some_random_input == true
+if input_class == True && some_random_input == true
   pp "you may pass"
 else
   pp "you may not pass"
@@ -70,9 +70,9 @@ elsif input_class == Symbol
   pp some_random_input.downcase
 elsif some_random_input == nil
   pp "no object provided"
-elsif input_class == true && some_random_input == true
+elsif input_class == True && some_random_input == true
   pp "you may pass"
-elsif input_class == false && some_random_input == false
+elsif input_class == False && some_random_input == false
   pp "you may not pass"
 elsif input_class == Hash
   pp some_random_input.keys
