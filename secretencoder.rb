@@ -6,4 +6,14 @@ Here is our secret code, don’t tell anyone: a = 1, e = 2, i = 3, o = 4, u = 5
 
 Your program should print the encoded message.
 
-=END
+=end
+
+secret = [
+  "I have a secret to share",
+  "Is this secure enough for my PASSWORD?",
+  "we should be more clever"
+].sample
+
+message = secret.downcase
+
+pp message.gsub("a","1")
