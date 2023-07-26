@@ -15,3 +15,7 @@ secret = [
 ].sample
 
 pp secret
+
+message = secret.downcase
+
+pp message.gsub("1","a").gsub("2","e").gsub("3","i").gsub("4","o").gsub("5","u")

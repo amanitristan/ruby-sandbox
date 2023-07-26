@@ -16,4 +16,4 @@ secret = [
 
 message = secret.downcase
 
-pp message.gsub("a","1")
+pp message.gsub("a","1").gsub("e","2").gsub("i","3").gsub("o","4").gsub("u","5")
