@@ -44,7 +44,7 @@ if some_random_input == nil
 end
 
 # if true, print "you may pass", otherwise print "you may not pass"
-if input_class == Boolean && some_random_input == true
+if input_class == true && some_random_input == true
   pp "you may pass"
 else
   pp "you may not pass"
@@ -55,4 +55,25 @@ if input_class == Hash
   pp some_random_input.keys
 end
 
+#
 # pull the if statement together
+#
+if input_class == String
+  pp some_random_input.downcase
+elsif input_class == Time
+  pp Time.now.strftime("%A").downcase
+elsif input_class == Integer && some_random_input.even?
+  pp "#{some_random_input} is even."
+elsif input_class == Integer && some_random_input.odd? 
+  pp "#{some_random_input} is odd."
+elsif input_class == Symbol
+  pp some_random_input.downcase
+elsif some_random_input == nil
+  pp "no object provided"
+elsif input_class == true && some_random_input == true
+  pp "you may pass"
+elsif input_class == false && some_random_input == false
+  pp "you may not pass"
+elsif input_class == Hash
+  pp some_random_input.keys
+end
