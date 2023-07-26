@@ -23,7 +23,7 @@ year = years.sample
 leap_year = "#{year} is a leap year!"
 no_leap_year = "#{year} is not a leap year."
 
-=begin
+=begin OPTION 1 VIA IF STATEMENT
 if year/4 == year%4.0
   pp leap_year
 elsif year/100 == year%100.0
