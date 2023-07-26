@@ -68,7 +68,7 @@ elsif input_class == Integer && some_random_input.odd?
   pp "#{some_random_input} is odd."
 elsif input_class == Symbol
   pp some_random_input.downcase
-elsif some_random_input == nil
+elsif input_class == NilClass
   pp "no object provided"
 elsif input_class == TrueClass && some_random_input == true
   pp "you may pass"
