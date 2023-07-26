@@ -12,3 +12,9 @@ inputs = [
 ]
 numbers = inputs.sample
 pp numbers
+
+numbers.each do |the_num|
+  if the_num == odd?
+    pp the_num.sum
+  end
+end
