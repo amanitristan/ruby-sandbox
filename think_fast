@@ -34,18 +34,25 @@ else
 end
 
 # if symbol, downcase and print
-
+if input_class == Symbol
+  pp some_random_input.downcase
+end
 
 # if nil , print "no object provided"
+if some_random_input == nil
+  pp "no object provided"
+end
 
-
-# if true, print "you may pass"
-
-
-# if false, print "you may not pass"
-
+# if true, print "you may pass", otherwise print "you may not pass"
+if some_random_input == true
+  pp "you may pass"
+else
+  pp "you may not pass"
+end
 
 # if hash, print list of keys as an Array
-
+if input_class == Hash
+  pp some_random_input.keys
+end
 
 # pull the if statement together
