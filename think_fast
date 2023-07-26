@@ -1,0 +1,43 @@
+unpredictable_inputs = [
+  "Hello!",
+  Time.now,
+  rand(100),
+  :GOODBYE,
+  nil,
+  true,
+  false,
+  { :city => "Chicago", :state => "IL", :zip => 60654 }
+]
+
+some_random_input = unpredictable_inputs.sample
+input_class = some_random_input.class
+
+# print the output and output class type
+pp some_random_input
+pp input_class
+
+# if string, downcase and print
+
+
+# if time, print downcased day of week
+
+
+# if integer, print "X is odd" or "X is even"
+
+
+# if symbol, downcase and print
+
+
+# if nil , print "no object provided"
+
+
+# if true, print "you may pass"
+
+
+# if false, print "you may not pass"
+
+
+# if hash, print list of keys as an Array
+
+
+# pull the if statement together
