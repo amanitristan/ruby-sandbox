@@ -39,12 +39,12 @@ pp input_class
 #end
 
 # if nil , print "no object provided"
-#if some_random_input == nil
-  pp "no object provided"
+#if input_class == NilClass
+  #pp "no object provided"
 #end
 
 # if true, print "you may pass", otherwise print "you may not pass"
-#if input_class == true && some_random_input == true
+#if input_class == TrueClass && some_random_input == true
   #pp "you may pass"
 #else
   #pp "you may not pass"
