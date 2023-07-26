@@ -9,10 +9,9 @@ If no name is given, print: "One for you, one for me."
 name = ["raghu", "Bob", ""].sample
 
 if name == ""
-  pp name = "you"
+  name = "you"
 else 
   name = name.capitalize
 end
 
-pp name
 pp "One for #{name}, one for me."
