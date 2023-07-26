@@ -27,7 +27,7 @@ if input_class == Time
 end
 
 # if integer, print "X is odd" or "X is even"
-if some_random_input.even?
+if input_class == Integer && some_random_input.even?
   pp "#{some_random_input} is even."
 else 
   pp "#{some_random_input} is odd."
@@ -44,7 +44,7 @@ if some_random_input == nil
 end
 
 # if true, print "you may pass", otherwise print "you may not pass"
-if some_random_input == true
+if input_class == Boolean && some_random_input == true
   pp "you may pass"
 else
   pp "you may not pass"
