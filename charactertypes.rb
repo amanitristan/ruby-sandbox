@@ -19,3 +19,14 @@ strings = [
 ]
 string = strings.sample
 pp string
+
+num_letters = string.count(letters)
+num_spaces = string.count(" ")
+num_digits = string.count(digits)
+
+string.each do |the_string|
+  pp "Number of letters in the_string is: #{num_letters}"
+  pp "Number of spaces in the_string is: #{num_spaces}"
+  pp "Number of digits in the_string is: #{num_digits}"
+end
+
