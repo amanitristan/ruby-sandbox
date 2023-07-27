@@ -11,6 +11,8 @@ Examples:
   30’s factors are 1, 2, 3, 5, 6, 10, 15, 30. In raindrop-speak, this would be a "PlingPlang".
   34’s factors are: 1, 2, 17, and 34. In raindrop-speak, this would be "34".
 
-  =end
+=end
 
-  
+integers = [1, 21, 35, 105]
+integer = integers.sample
+
