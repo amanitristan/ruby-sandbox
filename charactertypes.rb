@@ -11,3 +11,11 @@ Example output for string = "here 12 plus 25":
   "Number of digits in the string is: 4"
 
 =end
+
+strings = [
+  "here 12 plus 25",
+  "puzzle number 04 ",
+  " "
+]
+string = strings.sample
+pp string
