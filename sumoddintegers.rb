@@ -13,8 +13,39 @@ inputs = [
 numbers = inputs.sample
 pp numbers
 
+
+numbers.each do |num|
+  if num%2 == 0
+    num = 0
+  elsif
+    pp numbers.sum
+  end
+end
+
+
+
+
+
+
+###############################
+
+=begin
 numbers.each do |the_num|
-  if the_num == odd?
+  if the_num%2 /== 0
+    pp the_num
     pp the_num.sum
   end
 end
+=end
+
+=begin SOLUTION FROM CHAT GPT
+def sum_even_numbers(array)
+  sum = 0
+  
+  array.each do |num|
+    sum += num if num.even?
+  end
+  
+  sum
+end
+=end
