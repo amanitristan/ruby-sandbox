@@ -23,16 +23,23 @@ year = years.sample
 leap_year = "#{year} is a leap year!"
 no_leap_year = "#{year} is not a leap year."
 
-=begin OPTION 1 VIA IF STATEMENT
-if year/4 == year%4.0
-  pp leap_year
-elsif year/100 == year%100.0
+# =begin OPTION 1 VIA IF STATEMENT
+if year%4 == 0
+  if year%100 == 0
+    if year%400 == 0
+      pp leap_year
+    else
+      pp no_leap_year
+    end
+  else
+    pp leap_year
+  end
+else
   pp no_leap_year
-else year/400 == year%400.0
-  pp leap_year
 end
-=end
 
+
+=begin OPTION 2 VIA WHILE ???
 if year/4 == year%4
   while year/100 == year%100
     year/400 == year%400
@@ -41,3 +48,4 @@ if year/4 == year%4
 else
   pp no_leap_year
 end
+=end

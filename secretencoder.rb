@@ -16,4 +16,25 @@ secret = [
 
 message = secret.downcase
 
+=begin ALTERNATE METHOD
+word_array = message.split("")
+pp word_array
+index = 0
+while index < word_array.length
+  if word_array[index] == "a"
+    word_array[index] = "1"
+  elsif word_array[index] == "e"
+    word_array[index] = "2"
+  elsif word_array[index] == "i"
+    word_array[index] = "3"
+  elsif word_array[index] == "o"
+    word_array[index] = "4"
+  elsif word_array[index] == "u"
+    word_array[index] = "5"
+  end
+end
+
+pp word_array.join
+=end
+
 pp message.gsub("a","1").gsub("e","2").gsub("i","3").gsub("o","4").gsub("u","5")
