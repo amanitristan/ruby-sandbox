@@ -15,4 +15,26 @@ Examples:
 
 integers = [1, 21, 35, 105]
 integer = integers.sample
+pp integer
 
+if integer%3 ==0 && integer%5 == 0 && integer%7 == 0
+  pp "PlingPlangPlong"
+elsif integer%3 == 0
+  if integer%5 == 0
+    pp "PlingPlang"
+  elsif integer%7 == 0
+    pp "PlingPlong"
+  else
+    pp Pling
+  end
+elsif integer%5 == 0
+  if integer%7 == 0
+    pp "PlangPlong"
+  else
+    pp "Plang"
+  end
+elsif integer%7 == 0
+  pp "Plong"
+else
+  pp integer
+end
