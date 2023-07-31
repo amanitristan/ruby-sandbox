@@ -13,11 +13,20 @@ sentences = [
 sentence = sentences.sample
 pp sentence
 
-# Remove all words except "the" from the String.
-the_count = sentence.gsub(/[^"the"]/,"")
-pp the_count.count
+# Remove all punctuation from the String.
+the_string = sentence.gsub(/[^a-z0-9\s]/i, "")
+#pp the_string
+
+
+# Split the sentence into an array string.
+sentence_split = the_string.split
+#pp sentence_split
+
 
 # Count the number of times "the" appears in the String.
+times = sentence_split.count("the")
+#pp times
 
 
 # Print: "'the' appeared X times"
+pp "'the' appeared #{times} times"
