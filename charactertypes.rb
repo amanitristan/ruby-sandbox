@@ -31,17 +31,16 @@ digits = string.gsub(/[^0-9]/,"")
 
 # STEP 2: Count the number of characters for each (i.e., number of letters, spaces, or digits)
 num_letters = letters.count('a-zA-Z')
-pp num_letters
+#pp num_letters
 num_spaces = string.count(' ')
-pp num_spaces
+#pp num_spaces
 num_digits = string.count('0-9')
-pp num_digits
+#pp num_digits
 
-=begin
+
 # STEP 3: Print each statement below for the string that is pulled from the array.
-string.each do |the_string|
-  pp "Number of letters in the_string is: #{num_letters}"
-  pp "Number of spaces in the_string is: #{num_spaces}"
-  pp "Number of digits in the_string is: #{num_digits}"
-end
-=end
+#string.each do |the_string|
+  pp "Number of letters in the string is: #{num_letters}"
+  pp "Number of spaces in the string is: #{num_spaces}"
+  pp "Number of digits in the string is: #{num_digits}"
+#end
