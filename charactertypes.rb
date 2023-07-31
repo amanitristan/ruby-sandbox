@@ -30,11 +30,11 @@ digits = string.gsub(/[^0-9]/,"")
 
 
 # STEP 2: Count the number of characters for each (i.e., number of letters, spaces, or digits)
-num_letters = letters.count(/a-z/)
+num_letters = letters.count('a-zA-Z')
 pp num_letters
-num_spaces = string.count(/" "/)
+num_spaces = string.count(' ')
 pp num_spaces
-num_digits = string.count(/0-9/)
+num_digits = string.count('0-9')
 pp num_digits
 
 =begin
